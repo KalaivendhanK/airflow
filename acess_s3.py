@@ -12,7 +12,7 @@ data=open('upload_to_s3_test_file.txt','rb')
 s3.Bucket(my_s3_bucket).put_object(Key='upload_to_s3_test_file.txt',Body=data)
 
 txt_object=s3.Object(my_s3_bucket,'upload_to_s3_test_file.txt')
-println(txt_object.get['body'].read())
+print(txt_object.get['body'].read())
 
 # txt_data=pd.read_csv(txt_object['body'])
 # print(txt_data)
