@@ -13,7 +13,7 @@ body={
 headers = {'content-type': 'application/json'}
 
 try:
-    data=requests.post(url=url,json=params,headers=headers)
+    data=requests.post(url=url,json=body,headers=headers)
     print("Post Request Successfull...\n{}".format(data.text))
 except:
     print("Requesting the AWS API Gateway endpoint filed with status...\n{}".format(data.text))
