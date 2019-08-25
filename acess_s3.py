@@ -14,4 +14,5 @@ s3.Bucket(my_s3_bucket).put_object(Key='upload_to_s3_test_file.txt',Body=data)
 txt_object=s3.Object(my_s3_bucket,'upload_to_s3_test_file.txt')
 txt_data=txt_object.get()['Body'].read()
 
+
 print(txt_data)
