@@ -9,8 +9,10 @@ airflow pipeline test
     Reference: https://blog.sicara.com/automate-aws-tasks-boto3-airflow-hooks-593c3120e8fc
 
     1. Install pip for python
+
     2. Install airflow
         `sudo yum install apache-airflow`
+        
     3. Initialize the database
         `airflow initdb`
 
