@@ -10,15 +10,15 @@ airflow pipeline test
 
     1. Install pip for python
     2. Install airflow
-        - `sudo yum install apache-airflow`
+        `sudo yum install apache-airflow`
     3. Initialize the database
-        - `airflow initdb`
+        `airflow initdb`
 
     4. start the web server, default port is 8080
-        - `airflow webserver -p 8080`
+        `airflow webserver -p 8080`
 
     5. start the scheduler
-        - `airflow scheduler`
+        `airflow scheduler`
  
     6. Connect to airflow UI
         - open the port 8080 by adding the tcp port 8080 in security group for the EC2 instance
