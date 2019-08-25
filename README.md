@@ -32,7 +32,7 @@ airflow pipeline test
 **1. test-ariflowdag-in-aws**
 
 **Description:**
-    This dag executes only once . Main join is to insert random data into dynamodb
+    This dag executes only once . Main job is to insert random data into dynamodb
 
     1. There are three steps:
         - Prints current date
