@@ -1,4 +1,0 @@
-name,age,occupation
-kalai,25,IT
-angai,35,IT
-anitha,30,Bank

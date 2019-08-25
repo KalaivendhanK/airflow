@@ -29,9 +29,16 @@ t1=BashOperator(
     )
 
 t2=BashOperator(
-task_id="task2_sleep",
-bash_command="sleep 10s",
-dag=dag
+    task_id="insert_values_to_dynamodb",
+    bash_command='python /home/ec2-user/workspace/airflow/write_to_dynamodb.py'
+    dag=dag
+    )
+
+t3=BashOperator(
+    task_id="task2_sleep",
+    bash_command="sleep 10s",
+    dag=dag
     )
 
 t2.set_upstream(t1)
+t3.set_upstream(t2)
