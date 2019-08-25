@@ -11,7 +11,7 @@ dag_name="test-ariflowdag-in-aws"
 default_args={
     "owner": "Kalai",
     "depends_on_past": False,
-    "start_date": datetime(2019,8,1),
+    "start_date": datetime(2019,7,1),
     "email": ["kalaisundaram93@gmail.com"],
     "email_on_failure": False,
     "email_on_retry": False,
@@ -19,7 +19,8 @@ default_args={
     "retry_delay": timedelta(minutes=2)
 }
 
-dag=DAG(dag_name,default_args=default_args,schedule_interval=timedelta(days=1))
+# dag=DAG(dag_name,default_args=default_args,schedule_interval=timedelta(days=1))
+dag=DAG(dag_name,default_args=default_args,schedule_interval='@once')
 
 t1=BashOperator(
     task_id="task1_print_date",
