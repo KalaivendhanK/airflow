@@ -6,6 +6,7 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from datetime import datetime, timedelta
 
+# A sample comment
 dag_name="test-ariflowdag-in-aws"
 
 default_args={
