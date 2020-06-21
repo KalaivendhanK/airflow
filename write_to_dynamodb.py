@@ -1,10 +1,6 @@
 import requests
 import random
 import string
-# Below TODO to read the file contents and dynamically create body for post requests
-# It is now hardcoded to test body data
-# with open(file,rb) as f:
-
 
 def randomString(stringLength=10):
     """Generate a random string of fixed length """
